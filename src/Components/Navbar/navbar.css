@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0.3rem 2rem;
+    background-color: #7BB667;
+    min-width: 38rem;
+}
+
+.boton {
+    display: flex;
+    background-color: #ECD55A;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 1rem 0.7rem;
+    transition: 0.2s background-color ease-out;
+}
+
+.letra{
+font-size:x-large;  
+}
+
+.navbar__buttons span:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,52 @@
+.contenedor{
+    display: flex;
+    flex-direction: row;
+}
+
+.loginStyle  {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-size: x-large;
+    width: 900px;;
+    height:710px;
+}
+
+.extra{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    align-items: flex-end;
+
+}
+
+.estilo{
+    border-radius: 0.3rem;
+    border-color: #727272;
+    background-color: #ACD554;
+    margin: 5px 0 30px 0
+}
+
+.rectangulo{
+    width: 750px;
+    height: 710px;
+    background-color: #E6ECC4;
+    font-size: 0.8rem;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonIni{
+    background-color: #ECD55A;
+    border: none;
+    padding: 1rem 0.7rem;
+    transition: 0.2s background-color ease-out;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+}

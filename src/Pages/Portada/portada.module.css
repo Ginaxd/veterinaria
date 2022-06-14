@@ -1,0 +1,45 @@
+
+
+.contenedor{
+
+    display: flex;
+    padding: auto;
+    flex-direction: column;
+    background-image: url('https://media.discordapp.net/attachments/955627945211342849/975526327681695774/portada2.jpeg?width=1094&height=663');
+    background-size:cover;
+}
+
+.letritas{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items:center;
+    font-size: x-large;
+    width: 700px;;
+    height:710px;
+}
+
+.boton1{
+    display: flex;
+    background-color: #ECD55A;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 1rem 0.7rem;
+    transition: 0.2s background-color ease-out;
+}
+.barra{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    color: rgb(248, 245, 245);
+    padding: 0.3rem 2rem;
+    background-color: #0f2404;
+    min-width: 48rem;
+    min-height: 4rem;
+}
