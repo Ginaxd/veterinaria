@@ -2,7 +2,7 @@ import React from "react";
 import style from "./portada.module.css";
 import { useNavigate } from "react-router-dom";
 
-export default function portada() {
+export default function Portada() {
   const navigate = useNavigate();
   return (
     <div className={style.contenedor}>

@@ -1,0 +1,21 @@
+.medicinaInterna {
+    display: flex;
+    flex-direction: row;
+    row-gap: 1rem;
+    align-items: center;
+}
+
+.contenidoMed {
+    max-width: 40rem;
+    margin: auto;
+}
+
+.imgMedInterna {
+    width: 35rem;
+    margin: 4rem;
+}
+
+.rightBar {
+    display: flex;
+    flex-direction: row;
+}
