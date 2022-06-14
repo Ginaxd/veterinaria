@@ -35,3 +35,9 @@ p {
 span {
     font-weight: bold;
 }
+
+.btnCita {
+    background-color: 54B97C;
+    display: block;
+    margin: auto;
+}

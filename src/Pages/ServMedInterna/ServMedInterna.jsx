@@ -1,8 +1,11 @@
 import React from 'react'
 import "./ServMedInterna.css"
 import medInterna from "../../Components/Images/medInterna.jpg"
+import { useNavigate } from 'react-router-dom'
 
 export default function ServMedInterna() {
+    let navigate = useNavigate();
+
     return (
         <div className='medicinaInterna'>
 
@@ -17,12 +20,20 @@ export default function ServMedInterna() {
 
                 <h2>¿Cómo podemos ayudarte?</h2>
                     <p>En Zootopia Vet somos expertos en <span>Medicina Interna</span>, puedes concertar una cita para el Servicio de Medicina Interna, llamando  al teléfono  <span>957-252-25-25</span> o pulsando el siguiente recuadro “agendar cita”.</p>
+
+                    <button
+                    className="btnCita"
+                    onClick={() => {
+                        navigate("/agendar_cita")
+                    }}>
+                    Agendar cita
+                </button>
+                    
             </div>
             <div className='rightBar'>
                     <img className="imgMedInterna" src={medInterna} alt="Medicina Interna" />
             </div>
           
-                    
 
 
         </div>

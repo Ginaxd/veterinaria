@@ -1,8 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import peluqueria from "../../Components/Images/peluqueria.jpg"
 import "./ServPeluqueria.css"
 
 export default function ServPeluqueria() {
+
+    let navigate = useNavigate();
+    
     return (
         <div className='containerPel'>
             <h1 className='article'>Peluquería canina y felina</h1>
@@ -23,6 +27,13 @@ export default function ServPeluqueria() {
                 <p>Dejarás a tu mascota en las mejores manos, puedes estar seguro de que recibirás un excelente asesoramiento y que trataremos a tu mejor amigo como un auténtico VIP.</p>
                 <p>Ponte en contacto con nosotros y concierta una cita llamando  al teléfono  <span>957-252-25-25</span> o pulsando el siguiente recuadro “agendar cita”. ¡Estaremos encantados de conocerte a ti y a tu peludo muy pronto!
                     </p>
+                    <button
+                    className="btnCita"
+                    onClick={() => {
+                        navigate("/agendar_cita")
+                    }}>
+                    Agendar cita
+                </button>
 
             </div>
         </div>

@@ -1,8 +1,11 @@
 import React from 'react'
 import "./ServMedicinaPrev.css"
+import { useNavigate } from 'react-router-dom';
 import medicinaPrev from "../../Components/Images/medicinaPrev.jpg"
 
 export default function ServMedicinaPrev() {
+  let navigate = useNavigate();
+
   return (
     <div className='container'>
       
@@ -29,6 +32,14 @@ export default function ServMedicinaPrev() {
       En conclusión, la medicina preventiva tiene multitud de ventajas frente a la medicina reactiva. Nuestros perros y gatos enferman menos o no llegan a enfermar, además de que el costo económico de la medicina preventiva es mucho menor. De este modo, podemos disfrutar mucho más de nuestros animales y brindar los cuidados adecuados cuando más lo necesitan. ¡Apostar por este tipo de medicina es una decisión de lo más sensata!</p>
       <h2>¿Cómo podemos ayudarte?</h2>
       <p>En <span>Zootopia Vet</span> somos expertos en Medicina Preventiva, por eso hemos diseñado con especial cuidado nuestro <span>ZOOPLAN CANINO</span> y nuestro <span>ZOOPLAN FELINO.</span> Están, por cierto, adaptados a la etapa de vida de cada paciente. ¿Te apetece conocer más sobre ellos? Ponte en contacto con nosotros y concierta una cita llamando  al teléfono  <span>957-252-25-25</span> o pulsando el siguiente recuadro “agendar cita”.</p>
+      <button
+              className="btnCita"
+              onClick={() => {
+                navigate("/agendar_cita")
+              }}>
+              Agendar cita
+            </button>
+
       </div>
     </div>
     
