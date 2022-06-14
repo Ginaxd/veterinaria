@@ -1,0 +1,15 @@
+.containerMedFel {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.imgMedFelina {
+    width: 30rem;
+    margin-left: 3rem;
+}
+
+.contenidoMed {
+    max-width: 40rem;
+    margin: auto;
+}

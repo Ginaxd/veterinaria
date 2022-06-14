@@ -1,0 +1,15 @@
+.containerPel {
+    padding: 2rem;
+    margin: auto;
+}
+
+.imgPeluqueria {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.contenido {
+    display: block;
+    margin: auto;
+}
