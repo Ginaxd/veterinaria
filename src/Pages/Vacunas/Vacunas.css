@@ -1,0 +1,43 @@
+.container {
+    max-width: 60rem;
+    padding: 4rem;
+    margin: auto;
+}
+
+.imgMedPrev {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #8A9c64;
+}
+
+.contenidoPrev {
+    display: block;
+    margin-top: 1rem;
+    padding: 2rem;
+    max-width: 60rem;
+}
+
+p {
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+span {
+    font-weight: bold;
+}
+
+.btnCita {
+    background-color: 54B97C;
+    display: block;
+    margin: auto;
+}

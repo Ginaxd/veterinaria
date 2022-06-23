@@ -3,7 +3,18 @@
     flex-direction: row;
 }
 
-.loginStyle  {
+.rectangulo{
+    width: 600px;
+    height: 710px;
+    font-size: 0.8rem;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formu {
     grid-column: span 2;
     display: flex;
     flex-direction: column;
@@ -13,7 +24,6 @@
     width: 900px;;
     height:710px;
 }
-
 .extra{
     display: flex;
     flex-direction: column;
@@ -21,24 +31,12 @@
     align-items: flex-end;
 
 }
-
 .estilo{
     border-radius: 0.3rem;
-    border-color: #727272;
-    background-color: #ACD554;
+    stroke: #8ed885;
+    border-color: #8BD640;
+    background-color: #E8F2D7;
     margin: 5px 0 30px 0
-}
-
-.rectangulo{
-    width: 750px;
-    height: 710px;
-    background-color: #E6ECC4;
-    font-size: 0.8rem;
-    flex-direction: column;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .buttonIni{
@@ -50,6 +48,9 @@
     font-weight: bold;
     border-radius: 0.5rem;
 }
-.error{
-    color: red;
+
+.selectores {
+    padding: 0.5rem;
+    max-width: 30rem;
+    width: 20rem;
 }
