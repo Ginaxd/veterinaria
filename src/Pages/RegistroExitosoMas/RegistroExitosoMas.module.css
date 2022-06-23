@@ -1,0 +1,21 @@
+
+
+.contenedor{
+    height: 100vh; /* vh hac referencia a la altura de nuestro monitor-navegador, 100vh va a cubrir toda nuestra pantalla del navegador*/
+    display:flex;/*de que manera se van a acomodar los elementos dentro del contenedor, en este caso flex */
+    flex-direction: column;
+    padding: 20px;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.cuadro{
+    background-color: #F8F5EA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:'Times New Roman', Times, serif;
+}

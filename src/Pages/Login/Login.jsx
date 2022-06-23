@@ -1,10 +1,12 @@
 import React from "react";
 import axios from "axios";
 import style from "./Login.module.css";
+import { useNavigate } from "react-router-dom";
 
 
 
 export default function Login() {
+  const navigate = useNavigate();
   // Inicializar el estado del formulario en blanco
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
@@ -39,11 +41,14 @@ export default function Login() {
     // Mostrar el mensaje de éxito
 
     axios
-      .post("", {
+      .post("https://api-veterinaria-2022.herokuapp.com/users/auth/login/", {
         email,
         password,
       })
-      .then((response) => setSuccess(true))
+      .then((response) => {setSuccess(true)
+        const token = response.data.tokens.access;
+        window.localStorage.setItem("token", token)
+      })
       .catch((error) => {
         setError(
           `Error(${error.status}): ${error.message.setError(NuevoError())}`
@@ -51,7 +56,7 @@ export default function Login() {
       });
   };
 
-  if (success) return <div>LOGUEADO EXITOSAMENTE</div>;
+  if (success) return navigate(`/Home`);
 
   return (
     <div className={style.contenedor}>
